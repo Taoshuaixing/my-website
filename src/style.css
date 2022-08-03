@@ -1,4 +1,4 @@
-:root {
+/* :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -78,4 +78,10 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+} */
+#app {
+	max-width: 1800px;
+	margin: 0 auto;
+	padding: 2rem;
+	text-align: center;
 }
