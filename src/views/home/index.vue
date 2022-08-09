@@ -17,7 +17,15 @@
 		</div>
 		<div class="about-project">
 			<h3>个人作品</h3>
-			<Card v-for="item in list" :key="item.id" :content="item" />
+			<h4>我擅长把想法💡变为现实，始终将用户体验摆在首位。</h4>
+			<div class="about-bottom">
+				<Card
+					v-for="item in list"
+					:key="item.id"
+					:content="item"
+					class="card-list"
+				/>
+			</div>
 		</div>
 		<div class="call-me"></div>
 	</div>
@@ -71,5 +79,11 @@
 	.container .about-me p span {
 		font-size: 17px;
 		color: rgb(1, 0, 58);
+	}
+	.about-bottom {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		position: relative;
 	}
 </style>
