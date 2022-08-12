@@ -6,7 +6,10 @@ export const constantRoutes: Array<RouteRecordRaw> = [
 		component: () => import('@/layout/index.vue'),
 		redirect: '/home',
 		children: [
-			{ path: '/home', component: () => import('@/views/home/index.vue') },
+			{
+				path: '/home',
+				component: () => import('@/views/home/index.vue'),
+			},
 			{ path: '/about', component: () => import('@/views/about/index.vue') },
 			{
 				path: '/projects',

@@ -1,5 +1,5 @@
 <template>
-	<div>about</div>
+	<div class="card-warp"></div>
 </template>
 
 <script setup lang="ts"></script>

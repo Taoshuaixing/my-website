@@ -15,15 +15,17 @@
 					alt="logo" /></router-link
 		></el-menu-item>
 		<div class="flex-grow" />
-		<el-menu-item index="home">Home</el-menu-item>
-		<el-menu-item index="about">About</el-menu-item>
+		<el-menu-item index="home">关于我</el-menu-item>
+		<el-menu-item index="about">关于本站</el-menu-item>
 		<el-sub-menu index="projects">
-			<template #title>Projects</template>
+			<template #title>作品集</template>
 			<el-menu-item index="projects">vue3-admin</el-menu-item>
 			<el-menu-item index="projects">my-website</el-menu-item>
 			<el-menu-item index="projects">item three</el-menu-item>
 		</el-sub-menu>
-		<el-menu-item index="/home">GitHub</el-menu-item>
+		<el-menu-item index="/home"
+			>GitHub<el-icon><Position /></el-icon
+		></el-menu-item>
 	</el-menu>
 </template>
 
@@ -47,7 +49,8 @@
 		width: 60px;
 		aspect-ratio: 1.12;
 	}
-	:deep.el-menu-item:hover {
+	:deep.el-menu-item:hover,
+	:deep.el-menu-item:not(.is-disabled):focus {
 		background-color: transparent;
 	}
 	:deep.el-menu--horizontal .el-menu-item:not(.is-disabled):hover {

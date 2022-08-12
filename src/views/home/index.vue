@@ -18,7 +18,11 @@
 		<div class="about-project">
 			<h3>个人作品</h3>
 			<h4>我擅长把想法💡变为现实，始终将用户体验摆在首位。</h4>
-			<div class="about-bottom">
+			<div
+				class="about-bottom"
+				v-loading="loading"
+				element-loading-text="Loading..."
+			>
 				<Card
 					v-for="item in list"
 					:key="item.id"
@@ -38,13 +42,14 @@
 	import { IProjectList } from './type';
 
 	const list = ref<IProjectList[]>([]);
-
+	const loading = ref(true);
 	axios({
 		method: 'get',
 		url: '/projectList',
 	}).then(({ data }) => {
 		console.log(data);
 		list.value = data.result;
+		loading.value = false;
 	});
 </script>
 
