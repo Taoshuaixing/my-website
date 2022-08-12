@@ -17,14 +17,16 @@
 		<div class="flex-grow" />
 		<el-menu-item index="home">关于我</el-menu-item>
 		<el-menu-item index="about">关于本站</el-menu-item>
-		<el-sub-menu index="projects">
-			<template #title>作品集</template>
-			<el-menu-item index="projects">vue3-admin</el-menu-item>
-			<el-menu-item index="projects">my-website</el-menu-item>
-			<el-menu-item index="projects">item three</el-menu-item>
+		<el-sub-menu>
+			<template #title>作品直达</template>
+			<el-menu-item>vue3-admin</el-menu-item>
+			<el-menu-item>my-website</el-menu-item>
+			<el-menu-item>vue3-store-tools</el-menu-item>
+			<el-menu-item>vue3-big-screen</el-menu-item>
 		</el-sub-menu>
-		<el-menu-item index="/home"
-			>GitHub<el-icon><Position /></el-icon
+		<el-menu-item
+			><a href="https://github.com/Taoshuaixing" target="_blank"
+				>GitHub<el-icon><Position /></el-icon></a
 		></el-menu-item>
 	</el-menu>
 </template>
@@ -58,5 +60,11 @@
 	}
 	:deep.el-menu--horizontal {
 		border-bottom: 0px;
+	}
+	:deep.el-menu--horizontal > .el-sub-menu .el-sub-menu__title:hover {
+		background-color: transparent;
+	}
+	.el-menu-item a {
+		text-decoration: none;
 	}
 </style>

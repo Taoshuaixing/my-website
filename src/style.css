@@ -92,3 +92,8 @@ body {
 	padding: 2rem;
 	max-width: 960px;
 }
+a {
+	text-decoration: none;
+	color: #409eff;
+	cursor: pointer;
+}

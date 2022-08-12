@@ -1,7 +1,7 @@
 <template>
 	<div class="container">
 		<h1>你好！我是陶帅星</h1>
-		<div class="about-me">
+		<div class="about">
 			<h3>关于我</h3>
 			<br />
 			<p>我是一名生活在北京的软件开发者，目前从事前端产品研发工作。</p>
@@ -53,12 +53,12 @@
 	});
 </script>
 
-<style lang="less" scoped>
+<style lang="less">
 	.container {
 		padding: 50px 0;
 	}
-	.container .about-me,
-	.container .about-me,
+	.container .about,
+	.container .about,
 	.project .call-me {
 		padding: 20px 0;
 	}
@@ -72,7 +72,7 @@
 		margin: 0;
 		border-left: 3px solid #000;
 	}
-	.container .about-me p {
+	.container .about p {
 		background-color: #fff;
 		padding: 5px;
 		color: #4b4b4b;
@@ -80,8 +80,9 @@
 		letter-spacing: 3px;
 		display: inline-block;
 		font-size: 15px;
+		line-height: 30px;
 	}
-	.container .about-me p span {
+	.container .about p span {
 		font-size: 17px;
 		color: rgb(1, 0, 58);
 	}
