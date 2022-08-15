@@ -4,10 +4,10 @@
 		<div class="about">
 			<h3>为什么建立这个网站</h3>
 			<p>
-				我热爱创作，很多时候，在我完成一个作品时，我希望把我在创作时的想法和经历记录下来，因为它们对我来说弥足珍贵。当人们对我的作品感兴趣时，我可以向他们分享这些作品背后的故事。很长一段时间里，我都在计划打造一个网站来展示我和我的作品。
+				我热爱创作，很多时候，在我完成一个作品时，我希望把我在创作时的想法和经历记录下来，因为它们对我来说弥足珍贵。当人们对我的作品感兴趣时，我可以向他们分享这些作品背后的故事。很长一段时间里，我都在持续的升级和改版本网站，从开始的‘花里胡哨’到现在的简约注重内容。
 			</p>
 			<p>偶然一次，我在推特上刷到了 Josh W. Comeau 的一条推文：</p>
-			<img src="/src/assets/tweet.jpg" alt="tweet" class="tweet-img" />
+			<img src="@/assets/tweet.jpg" alt="tweet" class="tweet-img" />
 			<p>
 				他在推文中介绍了作为一名软件开发者，应该如何编写自己的作品集网站，并为此写了一本可以免费阅读的电子书
 				——
@@ -58,12 +58,8 @@
 <script setup lang="ts">
 	import { ref } from 'vue';
 	import axios from 'axios';
+	import { WebSiteList } from '@/views/home/type';
 
-	interface WebSiteList {
-		id: number;
-		name: string;
-		url: string;
-	}
 	const webList = ref<WebSiteList[]>([]);
 
 	axios({

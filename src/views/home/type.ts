@@ -4,3 +4,8 @@ export interface IProjectList {
 	name: string;
 	content: string;
 }
+export interface WebSiteList {
+	id: number;
+	name: string;
+	url: string;
+}

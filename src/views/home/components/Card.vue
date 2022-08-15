@@ -2,7 +2,7 @@
 	<div class="card-container">
 		<a href="#">
 			<div class="container-top">
-				<img :src="'/src/assets/' + content.imgUrl" :alt="content.name" />
+				<img :src="content.imgUrl" :alt="content.name" />
 			</div>
 			<div class="container-bottom">
 				<h2>{{ content.name }}</h2>
@@ -14,7 +14,7 @@
 
 <script setup lang="ts">
 	import { defineProps, PropType } from 'vue';
-	import { IProjectList } from '../type';
+	import { IProjectList } from '@/views/home/type';
 
 	defineProps({
 		content: {
@@ -58,21 +58,5 @@
 	.container-bottom p {
 		letter-spacing: 3px;
 		font-size: 14px;
-	}
-	.card-container::after {
-		position: absolute;
-		z-index: -1;
-		height: 100%;
-		width: 100%;
-		border-radius: 0.5rem;
-		background-repeat: repeat;
-		--squircle-radius: 16px;
-		top: 0.6em;
-		left: 0.6em;
-		background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="4" height="4"><path d="m0 0 4 4Zm4 0L0 4Z" stroke-width=".5" stroke="%23000"/></svg>');
-		transition: top 0.25s, left 0.25s;
-		content: '';
-		-webkit-mask-image: paint(squircle);
-		mask-image: paint(squircle);
 	}
 </style>

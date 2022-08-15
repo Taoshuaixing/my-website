@@ -4,7 +4,7 @@
 		><a href="https://beian.miit.gov.cn/" target="_blank"
 			>京ICP备2022016594号-1</a
 		>
-		<p>Powered by asing</p>
+		<p>Powered by Vue</p>
 	</div>
 </template>
 
