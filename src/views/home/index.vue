@@ -69,7 +69,7 @@
 		background: #fff;
 		display: inline-block;
 		padding: 3px 10px;
-		margin: 0;
+		margin: 20px 0 0;
 		border-left: 3px solid #000;
 	}
 	.container .about p {
