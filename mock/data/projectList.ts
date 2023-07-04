@@ -4,7 +4,7 @@
  * @Author: 陶帅星
  * @Date: 2023-05-25 17:27:49
  * @LastEditors: 陶帅星
- * @LastEditTime: 2023-06-21 15:58:54
+ * @LastEditTime: 2023-07-03 16:10:24
  */
 export default [
 	{
@@ -19,10 +19,10 @@ export default [
 	{
 		id: 2,
 		imgUrl:
-			'http://img60.ddimg.cn/upload_img/00880/new/vue-color-avatar-1660554490.jpg',
-		name: 'vue-color-avatar',
+			'http://img62.ddimg.cn/upload_img/00890/new/fast-admin-tsx-1688371317.jpg',
+		name: 'vue3-fast-admin',
 		content:
-			'一款矢量风格头像的生成器，通过搭配不同的素材组件，生成属于自己的个性化头像。',
+			'基于 Vite 3.0 + Vue 3.0 + element-plus + typescript 的后台管理系统,使用了最新的前端技术栈，提供最基础的框架模型，可以帮助你快速搭建企业级中后台产品原型。',
 		link: '',
 	},
 	{
