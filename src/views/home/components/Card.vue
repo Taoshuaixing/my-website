@@ -78,4 +78,5 @@ defineProps({
 .container-bottom p {
 	letter-spacing: 3px;
 	font-size: 14px;
-}</style>
+}
+</style>
