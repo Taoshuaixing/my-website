@@ -4,7 +4,7 @@
  * @Author: 陶帅星
  * @Date: 2023-05-25 17:27:49
  * @LastEditors: 陶帅星
- * @LastEditTime: 2023-07-03 16:10:24
+ * @LastEditTime: 2023-07-05 14:28:33
  */
 export default [
 	{
@@ -22,7 +22,7 @@ export default [
 			'http://img62.ddimg.cn/upload_img/00890/new/fast-admin-tsx-1688371317.jpg',
 		name: 'vue3-fast-admin',
 		content:
-			'基于 Vite 3.0 + Vue 3.0 + element-plus + typescript 的后台管理系统,使用了最新的前端技术栈，提供最基础的框架模型，可以帮助你快速搭建企业级中后台产品原型。',
+			'基于 Vite3.0+Vue3.0+element-plus+typescript 的后台管理系统,使用了最新的前端技术栈，提供最基础的框架模型，可以帮助你快速搭建企业级中后台产品原型。',
 		link: '',
 	},
 	{
