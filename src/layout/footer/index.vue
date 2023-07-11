@@ -4,7 +4,7 @@
  * @Author: 陶帅星
  * @Date: 2023-05-25 17:27:50
  * @LastEditors: 陶帅星
- * @LastEditTime: 2023-07-04 14:17:43
+ * @LastEditTime: 2023-07-11 18:09:56
 -->
 <template>
 	<div class="page-footer">
@@ -13,10 +13,13 @@
 			target="_blank"
 		>京ICP备2022016594号-2</a>
 		<!-- <p>Powered by Vue</p> -->
+		<m-button type="primary">按钮</m-button>
+		<n-button type="danger">按钮</n-button>
 	</div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+</script>
 
 <style lang="less" scoped>
 .page-footer {
