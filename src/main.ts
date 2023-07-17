@@ -11,8 +11,8 @@ import './style.css';
 import App from './App.vue';
 import ElementPlus from 'element-plus';
 import 'element-plus/dist/index.css';
-// import ViteNiceUI from 'vite-nice-ui';
-// import 'vite-nice-ui/css';
+import NiceUI from 'vite-nice-ui';
+import 'vite-nice-ui/css';
 import router from './router';
 import '/mock/index';
 import * as ElementPlusIconsVue from '@element-plus/icons-vue';
@@ -20,5 +20,5 @@ const app = createApp(App);
 for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
 	app.component(key, component);
 }
-// app.use(ViteNiceUI);
+app.use(NiceUI);
 app.use(ElementPlus).use(router).mount('#app');
