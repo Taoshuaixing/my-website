@@ -8,21 +8,17 @@
 -->
 <template>
 	<div class="page-footer">
-		<span>ICP备案/许可证号：</span><a
-			href="https://beian.miit.gov.cn/"
-			target="_blank"
-		>京ICP备2022016594号-2</a>
-		<!-- <p>Powered by Vue</p> -->
-		<m-button type="primary">按钮</m-button>
-		<n-button type="danger">按钮</n-button>
+		<span>ICP备案/许可证号：</span
+		><a href="https://beian.miit.gov.cn/" target="_blank"
+			>京ICP备2022016594号-2</a
+		>
 	</div>
 </template>
 
-<script setup lang="ts">
-</script>
+<script setup lang="ts"></script>
 
 <style lang="less" scoped>
-.page-footer {
-	text-align: center;
-}
+	.page-footer {
+		text-align: center;
+	}
 </style>
