@@ -11,8 +11,10 @@ import './style.css';
 import App from './App.vue';
 import ElementPlus from 'element-plus';
 import 'element-plus/dist/index.css';
+
 import NiceUI from 'vite-nice-ui';
 import 'vite-nice-ui/css';
+
 import router from './router';
 import '/mock/index';
 import * as ElementPlusIconsVue from '@element-plus/icons-vue';
