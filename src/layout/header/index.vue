@@ -9,11 +9,9 @@
 	>
 		<el-menu-item
 			><router-link to="home">
-				<img
-					class="logo_img"
-					src="@/assets/my-website-logo.png"
-					alt="logo"
-				/> </router-link
+				<el-image
+					style="width: 100px"
+					src="	http://img63.ddimg.cn/upload_img/00880/new/my-website-logo-1689827123.png" /></router-link
 		></el-menu-item>
 		<div class="flex-grow" />
 		<el-menu-item index="home">关于我</el-menu-item>
@@ -68,11 +66,6 @@
 
 	:deep.el-menu {
 		background-color: transparent;
-	}
-
-	.logo_img {
-		width: 60px;
-		aspect-ratio: 1.12;
 	}
 
 	:deep.el-menu-item:hover,
