@@ -53,7 +53,6 @@
 		method: 'get',
 		url: '/projectList',
 	}).then(({ data }) => {
-		console.log(data);
 		list.value = data.result;
 		loading.value = false;
 	});
