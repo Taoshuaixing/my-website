@@ -1,4 +1,3 @@
-import { NiceUI } from 'vite-nice-ui';
 /// <reference types="vite/client" />
 
 declare module '*.vue' {
@@ -6,3 +5,4 @@ declare module '*.vue' {
 	const component: DefineComponent<{}, {}, any>;
 	export default component;
 }
+declare module 'vite-nice-ui';
