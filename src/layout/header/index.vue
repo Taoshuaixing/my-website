@@ -55,7 +55,7 @@
 
 	const activeIndex = ref('home');
 	const handleSelect = (key: string, keyPath: string[]) => {
-		console.log(key, keyPath);
+		// console.log(key, keyPath);
 	};
 </script>
 
