@@ -18,7 +18,14 @@ import 'vite-nice-ui/css';
 import router from './router';
 import '/mock/index';
 import * as ElementPlusIconsVue from '@element-plus/icons-vue';
+import baiduAnalytics from 'vue-baidu-analytics';
+
 const app = createApp(App);
+app.use(baiduAnalytics, {
+	router: router,
+	siteIdList: ['百度统计ID'], //在上面生成的script中hm.src后面的字符串
+	isDebug: false,
+});
 for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
 	app.component(key, component);
 }
